@@ -4,9 +4,6 @@
 ## The aim is to cache heavy matrix calculations using scoping
 ## rules of R
 
-## This function creates a list with cachable matrix object and
-## methods to manipulate this object
-
 ## Example of use:
 ## > x <- matrix(c(1,2,3,4),nrow=2,ncol=2)
 ## > xcache <- makeCacheMatrix(x)
@@ -18,6 +15,9 @@
 ## [1,]    1    0
 ## [2,]    0    1
 ## .. so it is!
+
+## This function creates a list with cachable matrix object and
+## methods to manipulate this object
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL ## This is a cached value
